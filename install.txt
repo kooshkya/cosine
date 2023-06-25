@@ -1,1 +1,1 @@
-iverilog -o test.vvp multiplexer.v buffer.v adder.v multiplier.v register.v datapath.v
+iverilog -o test.vvp myrom.v multiplexer.v buffer.v adder.v multiplier.v register.v datapath.v

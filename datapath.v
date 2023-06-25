@@ -17,6 +17,7 @@ module datapath(input clk, input [2 : 0] state, input [15:0] vSig, input [15:0] 
     wire expressionAndTermLoad;
     wire [15 : 0] termData;
     wire [15 : 0] termContent;
+    wire [15 : 0] counterContent;
 
     wire [15 : 0] coefficient;
 
@@ -39,7 +40,8 @@ module datapath(input clk, input [2 : 0] state, input [15:0] vSig, input [15:0] 
     register Done (.clk(clk), .load(CalculateDistance), .clear(1'b0), .inc(1'b0), .asyncclear(StartCalculation), .data(1'b1), .Q(done));
     register V (.clk(clk), .load(StartCalculation), .clear(1'b0), .inc(1'b0), .asyncclear(1'b0), .data(vSig), .Q(VContent));
     register X2 (.clk(clk), .load(StartCalculation), .clear(1'b0), .inc(1'b0), .asyncclear(1'b0), .data(multiplierResult));
-
+    register counter (.clk(clk), .load(StartCalculation), .clear(1'b0),
+        .inc(AccumulateTerms), .asyncclear(1'b0), .data(16'b0), .Q(counterContent));
     or(expressionAndTermLoad, StartCalculation, AccumulateTerms);
 
     multiplexer exprDataMux (.I0(16'b0), .I1(adderResult), .select(AccumulateTerms), .out(expressionData));
