@@ -1,3 +1,4 @@
+// note to self: you have forgotten completely to multiply x^2 by term before updating term.
 module CUD;
     reg rst;
     reg clk, start;
