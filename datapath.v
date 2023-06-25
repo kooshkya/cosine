@@ -1,15 +1,17 @@
-module datapath(input clk, input [2 : 0] state, input [15:0] vSig, input [15:0] XSig, output done, output [15 : 0] distance);
+module datapath(input clk, input [2 : 0] state, input [15:0] vSig, input [15:0] XSig, output done, stop, output [15 : 0] distance);
     wire StandBy, Alert, StartCalculation, AccumulateTerms, CalculateDistance;
-    assign StandBy = 3'd0;
-    assign Alert = 3'd1;
-    assign StartCalculation = 3'd2;
-    assign AccumulateTerms = 3'd3;
-    assign CalculateDistance = 3'd4;
+    assign StandBy = (state == 3'd0);
+    assign Alert = (state == 3'd1);
+    assign StartCalculation = (state == 3'd2);
+    assign AccumulateTerms = (state == 3'd3);
+    assign CalculateDistance = (state == 3'd4);
 
     wire [15 : 0] adderA;
     wire [15 : 0] adderB;
     wire [15 : 0] adderResult;
-    adder myadder();
+    assign adderA = expressionContent;
+    assign adderB = termContent;
+    adder myadder(.a(adderA), .b(adderB), .result(adderResult));
 
     wire [15 : 0] VContent;
     wire [15 : 0] expressionContent;
@@ -32,7 +34,7 @@ module datapath(input clk, input [2 : 0] state, input [15:0] vSig, input [15:0] 
     buffer B5 (.incoming(termContent), .cs(AccumulateTerms), .outgoing(multiplierA));
     buffer B6 (.incoming(coefficient), .cs(AccumulateTerms), .outgoing(multiplierB));
     
-    multiplier mymultiplier(.result(multiplierResult));
+    multiplier mymultiplier(.a(multiplierA), .b(multiplierB), .result(multiplierResult));
 
     wire doneRegisterLoad;
     assign doneRegisterLoad = CalculateDistance;
@@ -45,7 +47,7 @@ module datapath(input clk, input [2 : 0] state, input [15:0] vSig, input [15:0] 
     or(expressionAndTermLoad, StartCalculation, AccumulateTerms);
 
     multiplexer exprDataMux (.I0(16'b0), .I1(adderResult), .select(AccumulateTerms), .out(expressionData));
-    register expression (.clk(clk), .load(expressionAndTermLoad), .clear(1'b0), .inc(1'b0),
+    registerr expression (.clk(clk), .load(expressionAndTermLoad), .clear(1'b0), .inc(1'b0),
          .asyncclear(1'b0), .data(expressionData), .Q(expressionContent));
 
     multiplexer termDataMux (.I0({5'b00001, 11'b0}), .I1(multiplierResult), .select(AccumulateTerms), .out(termData));
@@ -57,4 +59,16 @@ module datapath(input clk, input [2 : 0] state, input [15:0] vSig, input [15:0] 
 
     myrom therom (counterContent[2 : 0], coefficient);
 
+    assign stop = (counterContent[3 : 0] == 4'b1000) ? 1'b1 : 1'b0;
+
+    // always @ (clk) begin
+    //     $display("time: %t\nmultiplierA: %b, multiplierB: %b, multiplierResult: %b\nexpressionContent: %b\n\n",
+    //          $time, multiplierA, multiplierB, multiplierResult, expressionContent);
+    //     $display("adderA: %b, adderB: %b, adderResult: %b\n\n",
+    //         adderA, adderB, adderResult);
+    // end
+    always @ (clk) begin
+
+        $display("time: %t\nexpressionContent: %b, termContent: %b, addResult: %b\n\n", $time, expressionContent, termContent, adderResult);
+    end
 endmodule
