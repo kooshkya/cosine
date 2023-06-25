@@ -55,4 +55,6 @@ module datapath(input clk, input [2 : 0] state, input [15:0] vSig, input [15:0] 
     register distanceRegister (.clk(clk), .load(CalculateDistance), .clear(1'b0),
         .inc(1'b0), .asyncclear(1'b0), .data(multiplierResult), .Q(distance));
 
+    myrom therom (counterContent[2 : 0], coefficient);
+
 endmodule

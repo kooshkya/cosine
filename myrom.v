@@ -1,4 +1,4 @@
-module myrom (input [2 : 0] select, output [15 : 0] data);
+module myrom (input [2 : 0] select, output reg [15 : 0] data);
     always @ (*) begin
         if (select == 3'b000) begin
             data = 16'b1111110000000000;
