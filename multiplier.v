@@ -1,7 +1,15 @@
 module multiplier(input [15 : 0] a, input [15 : 0] b, output [15 : 0] result);
     wire [31 : 0] guardedres;
-    assign guardedres = a * b;
-    assign result = guardedres[26 : 11];
+    wire [15 : 0] unsignedResult;
+    wire [15 : 0] aShadow;
+    wire [15 : 0] bShadow;
+    wire sign;
+    assign sign = a[15] ^ b[15];
+    assign aShadow = (a[15]) ? ((~a) + 1) : a;
+    assign bShadow = (b[15]) ? ((~b) + 1) : b;
+    assign guardedres = aShadow * bShadow;
+    assign unsignedResult = guardedres[26 : 11];
+    assign result = (sign) ? ((~unsignedResult) + 1) : unsignedResult;
 endmodule
 
 

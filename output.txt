@@ -1,6 +1,6 @@
 registerr
 time:                    0
-Q is now xxxxxxxxxxxxxxxx and data is 0000000000000000 and load is 0
+Q is now xxxxxxxxxxxxxxxx and data is xxxxxxxxxxxxxxxx and load is 0
 asyncclear: 0
 
 
@@ -11,14 +11,14 @@ expressionContent: xxxxxxxxxxxxxxxx, termContent: xxxxxxxxxxxxxxxx, addResult: x
 time:                    0
 clk: 1
 start: x, vSig: xxxxx.xxxxxxxxxxx, xSig: xxxxx.xxxxxxxxxxx
-state: 000, stop: x
+state: 0000, stop: x
 distance: xxxxx.xxxxxxxxxxx
 
 
 time:                    1
 clk: 1
-start: 1, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: x
+start: 1, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0000, stop: x
 distance: xxxxx.xxxxxxxxxxx
 
 
@@ -28,14 +28,14 @@ expressionContent: xxxxxxxxxxxxxxxx, termContent: xxxxxxxxxxxxxxxx, addResult: x
 
 time:                    5
 clk: 0
-start: 1, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: x
+start: 1, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0000, stop: x
 distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                   10
-Q is now xxxxxxxxxxxxxxxx and data is 0000000000000000 and load is 0
+Q is now xxxxxxxxxxxxxxxx and data is xxxxxxxxxxxxxxxx and load is 0
 asyncclear: 0
 
 
@@ -45,8 +45,8 @@ expressionContent: xxxxxxxxxxxxxxxx, termContent: xxxxxxxxxxxxxxxx, addResult: x
 
 time:                   10
 clk: 1
-start: 1, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 001, stop: x
+start: 1, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0001, stop: x
 distance: xxxxx.xxxxxxxxxxx
 
 
@@ -56,14 +56,14 @@ expressionContent: xxxxxxxxxxxxxxxx, termContent: xxxxxxxxxxxxxxxx, addResult: x
 
 time:                   15
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 001, stop: x
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0001, stop: x
 distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                   20
-Q is now xxxxxxxxxxxxxxxx and data is 0000000000000000 and load is 0
+Q is now xxxxxxxxxxxxxxxx and data is xxxxxxxxxxxxxxxx and load is 0
 asyncclear: 0
 
 
@@ -73,8 +73,8 @@ expressionContent: xxxxxxxxxxxxxxxx, termContent: xxxxxxxxxxxxxxxx, addResult: x
 
 time:                   20
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 010, stop: x
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0010, stop: x
 distance: xxxxx.xxxxxxxxxxx
 
 
@@ -84,53 +84,53 @@ expressionContent: xxxxxxxxxxxxxxxx, termContent: xxxxxxxxxxxxxxxx, addResult: x
 
 time:                   25
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 010, stop: x
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0010, stop: x
 distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                   30
-Q is now 0000000000000000 and data is 0000000000000000 and load is 1
-asyncclear: 0
-
-
-time:                   30
-expressionContent: 0000000000000000, termContent: 0000100000000000, addResult: 0000100000000000
-
-
-time:                   30
-clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
-distance: xxxxx.xxxxxxxxxxx
-
-
-time:                   35
-expressionContent: 0000000000000000, termContent: 0000100000000000, addResult: 0000100000000000
-
-
-time:                   35
-clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
-distance: xxxxx.xxxxxxxxxxx
-
-
-registerr
-time:                   40
 Q is now 0000100000000000 and data is 0000100000000000 and load is 1
 asyncclear: 0
 
 
+time:                   30
+expressionContent: 0000000000000000, termContent: 0000100000000000, addResult: 0000100000000000
+
+
+time:                   30
+clk: 1
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
+distance: xxxxx.xxxxxxxxxxx
+
+
+time:                   35
+expressionContent: 0000000000000000, termContent: 0000100000000000, addResult: 0000100000000000
+
+
+time:                   35
+clk: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
+distance: xxxxx.xxxxxxxxxxx
+
+
+registerr
+time:                   40
+Q is now 1111110000000000 and data is 1111110000000000 and load is 1
+asyncclear: 0
+
+
 time:                   40
 expressionContent: 0000100000000000, termContent: 1111110000000000, addResult: 0000010000000000
 
 
 time:                   40
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
@@ -140,484 +140,475 @@ expressionContent: 0000100000000000, termContent: 1111110000000000, addResult: 0
 
 time:                   45
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                   50
-Q is now 0000010000000000 and data is 0000010000000000 and load is 1
+Q is now 1111111100000000 and data is 1111111100000000 and load is 1
 asyncclear: 0
 
 
 time:                   50
-expressionContent: 0000010000000000, termContent: 0110101011110101, addResult: 0110111011110101
+expressionContent: 0000100000000000, termContent: 1111111100000000, addResult: 0000011100000000
 
 
 time:                   50
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 time:                   55
-expressionContent: 0000010000000000, termContent: 0110101011110101, addResult: 0110111011110101
+expressionContent: 0000100000000000, termContent: 1111111100000000, addResult: 0000011100000000
 
 
 time:                   55
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                   60
-Q is now 0110111011110101 and data is 0110111011110101 and load is 1
+Q is now 0000000000010101 and data is 0000000000010101 and load is 1
 asyncclear: 0
 
 
 time:                   60
-expressionContent: 0110111011110101, termContent: 0101101100010010, addResult: 1100101000000111
+expressionContent: 0000011100000000, termContent: 0000000000010101, addResult: 0000011100010101
 
 
 time:                   60
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 time:                   65
-expressionContent: 0110111011110101, termContent: 0101101100010010, addResult: 1100101000000111
+expressionContent: 0000011100000000, termContent: 0000000000010101, addResult: 0000011100010101
 
 
 time:                   65
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                   70
-Q is now 1100101000000111 and data is 1100101000000111 and load is 1
+Q is now 0000000000000101 and data is 0000000000000101 and load is 1
 asyncclear: 0
 
 
 time:                   70
-expressionContent: 1100101000000111, termContent: 0110000010011010, addResult: 0010101010100001
+expressionContent: 0000011100000000, termContent: 0000000000000101, addResult: 0000011100000101
 
 
 time:                   70
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 time:                   75
-expressionContent: 1100101000000111, termContent: 0110000010011010, addResult: 0010101010100001
+expressionContent: 0000011100000000, termContent: 0000000000000101, addResult: 0000011100000101
 
 
 time:                   75
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                   80
-Q is now 0010101010100001 and data is 0010101010100001 and load is 1
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                   80
-expressionContent: 0010101010100001, termContent: 0001001000101010, addResult: 0011110011001011
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                   80
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 time:                   85
-expressionContent: 0010101010100001, termContent: 0001001000101010, addResult: 0011110011001011
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                   85
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                   90
-Q is now 0011110011001011 and data is 0011110011001011 and load is 1
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                   90
-expressionContent: 0011110011001011, termContent: 0100010100011011, addResult: 1000000111100110
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                   90
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 time:                   95
-expressionContent: 0011110011001011, termContent: 0100010100011011, addResult: 1000000111100110
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                   95
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                  100
-Q is now 1000000111100110 and data is 1000000111100110 and load is 1
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                  100
-expressionContent: 1000000111100110, termContent: 1010001100000000, addResult: 0010010011100110
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  100
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 time:                  105
-expressionContent: 1000000111100110, termContent: 1010001100000000, addResult: 0010010011100110
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  105
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                  110
-Q is now 0010010011100110 and data is 0010010011100110 and load is 1
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                  110
-expressionContent: 0010010011100110, termContent: 0101111100011111, addResult: 1000010000000101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  110
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 1
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 time:                  115
-expressionContent: 0010010011100110, termContent: 0101111100011111, addResult: 1000010000000101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  115
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 011, stop: 1
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                  120
-Q is now 1000010000000101 and data is 1000010000000101 and load is 1
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                  120
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  120
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 100, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 time:                  125
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  125
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 100, stop: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
 distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                  130
-Q is now 1000010000000101 and data is 0000000000000000 and load is 0
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                  130
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  130
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
+distance: xxxxx.xxxxxxxxxxx
 
 
 time:                  135
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  135
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
+distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                  140
-Q is now 1000010000000101 and data is 0000000000000000 and load is 0
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                  140
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  140
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
+distance: xxxxx.xxxxxxxxxxx
 
 
 time:                  145
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  145
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
+distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                  150
-Q is now 1000010000000101 and data is 0000000000000000 and load is 0
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                  150
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  150
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
+distance: xxxxx.xxxxxxxxxxx
 
 
 time:                  155
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  155
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
+distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                  160
-Q is now 1000010000000101 and data is 0000000000000000 and load is 0
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                  160
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  160
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
+distance: xxxxx.xxxxxxxxxxx
 
 
 time:                  165
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  165
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 0
+distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                  170
-Q is now 1000010000000101 and data is 0000000000000000 and load is 0
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                  170
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  170
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
+distance: xxxxx.xxxxxxxxxxx
 
 
 time:                  175
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  175
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 0
+distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                  180
-Q is now 1000010000000101 and data is 0000000000000000 and load is 0
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                  180
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  180
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 1
+distance: xxxxx.xxxxxxxxxxx
 
 
 time:                  185
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  185
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0101, stop: 1
+distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                  190
-Q is now 1000010000000101 and data is 0000000000000000 and load is 0
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                  190
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  190
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 1
+distance: xxxxx.xxxxxxxxxxx
 
 
 time:                  195
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  195
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0011, stop: 1
+distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                  200
-Q is now 1000010000000101 and data is 0000000000000000 and load is 0
+Q is now 0000000000000000 and data is 0000000000000000 and load is 1
 asyncclear: 0
 
 
 time:                  200
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  200
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0100, stop: 0
+distance: xxxxx.xxxxxxxxxxx
 
 
 time:                  205
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
 
 time:                  205
 clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0100, stop: 0
+distance: xxxxx.xxxxxxxxxxx
 
 
 registerr
 time:                  210
-Q is now 1000010000000101 and data is 0000000000000000 and load is 0
+Q is now 0000000000000000 and data is 0000011100000101 and load is 0
 asyncclear: 0
 
 
 time:                  210
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
+expressionContent: 0000011100000101, termContent: 0000000000000000, addResult: 0000011100000101
 
+
+Done! distance is : 00000.11100000101 and 0000011100000101
 
 time:                  210
 clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
-
-
-time:                  215
-expressionContent: 1000010000000101, termContent: 1011010001010000, addResult: 0011100001010101
-
-
-time:                  215
-clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00001.00001100001
-state: 000, stop: 0
-distance: 10000.10000000101
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0000, stop: 0
+distance: 00000.11100000101
 
 

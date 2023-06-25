@@ -6,7 +6,7 @@ module CUD;
     reg [15 : 0] vSig;
     reg [15 : 0] XSig;
     wire [15 : 0] distance;
-    wire [2 : 0] state;
+    wire [3 : 0] state;
     controlUnit CU (.clk(clk), .start(start), .stop(stop), .state(state));
     datapath DP (.clk(clk), .state(state), .vSig(vSig), .XSig(XSig), .done(done), .stop(stop), .distance(distance));
 
@@ -21,14 +21,21 @@ module CUD;
             XSig[15 : 11], XSig[10 : 0], state, stop, distance[15 : 11], distance[10 : 0]);
     end
 
+    always @ (posedge done) begin
+        $display("Done! distance is : %b.%b and %b\n", distance[15:11], distance[10:0], distance);
+    end
+
     initial begin  
         #1;
         vSig = 16'b0000100000000000;
-        XSig = 16'b0000100001100001;
+        XSig = 16'b0000010000000000;
         start = 1'b1;
         #14;
         start = 1'b0;
-        #200;
+        #196;
+
+
+
         $finish;
     end
 endmodule
