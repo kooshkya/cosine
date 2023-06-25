@@ -7,7 +7,7 @@ module CUD;
     reg [15 : 0] XSig;
     wire [15 : 0] distance;
     wire [3 : 0] state;
-    controlUnit CU (.clk(clk), .start(start), .stop(stop), .state(state));
+    controlUnit CU (.clk(clk), .start(start), .stop(stop), .state(state), .rst(rst));
     datapath DP (.clk(clk), .state(state), .vSig(vSig), .XSig(XSig), .done(done), .stop(stop), .distance(distance));
 
     always begin
@@ -33,9 +33,15 @@ module CUD;
         #14;
         start = 1'b0;
         #196;
-
-
-
+        rst = 1'b1;
+        #10;
+        rst = 1'b0;
+        vSig = 16'b1111010000000000;
+        XSig = 16'b0000100101000110;
+        start = 1'b1;
+        #14;
+        start = 1'b0;
+        #196;
         $finish;
     end
 endmodule

@@ -56,7 +56,7 @@ module datapath(input clk, input [3 : 0] state, input [15:0] vSig, input [15:0] 
 
     or(termLoad, StartCalculation, AccumulateTerms, Remult);
     multiplexer termDataMux (.I0(multiplierResult), .I1({5'b00001, 11'b0}), .select(StartCalculation), .out(termData));
-    registerr term (.clk(clk), .load(termLoad), .clear(1'b0),
+    register term (.clk(clk), .load(termLoad), .clear(1'b0),
          .inc(1'b0), .asyncclear(1'b0), .data(termData), .Q(termContent));
 
     register distanceRegister (.clk(clk), .load(CalculateDistance), .clear(1'b0),
@@ -72,7 +72,7 @@ module datapath(input clk, input [3 : 0] state, input [15:0] vSig, input [15:0] 
     //     $display("adderA: %b, adderB: %b, adderResult: %b\n\n",
     //         adderA, adderB, adderResult);
     // end
-    always @ (clk) begin
-        $display("time: %t\nexpressionContent: %b, termContent: %b, addResult: %b\n\n", $time, expressionContent, termContent, adderResult);
-    end
+    // always @ (clk) begin
+    //     $display("time: %t\nexpressionContent: %b, termContent: %b, addResult: %b\n\n", $time, expressionContent, termContent, adderResult);
+    // end
 endmodule
