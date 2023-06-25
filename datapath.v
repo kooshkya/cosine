@@ -18,6 +18,8 @@ module datapath(input clk, input [2 : 0] state, input [15:0] vSig, input [15:0] 
     wire [15 : 0] termData;
     wire [15 : 0] termContent;
 
+    wire [15 : 0] coefficient;
+
 
     wire [15 : 0] multiplierA;
     wire [15 : 0] multiplierB;
@@ -25,7 +27,9 @@ module datapath(input clk, input [2 : 0] state, input [15:0] vSig, input [15:0] 
     buffer B1 (.incoming(XSig), .cs(StartCalculation), .outgoing(multiplierA));
     buffer B2 (.incoming(XSig), .cs(StartCalculation), .outgoing(multiplierB));
     buffer B3 (.incoming(VContent), .cs(CalculateDistance), .outgoing(multiplierA));
-    buffer B4 (.incoming(expressionContent), .cs(CalculateDistance), .outgoing(multiplierA));
+    buffer B4 (.incoming(expressionContent), .cs(CalculateDistance), .outgoing(multiplierB));
+    buffer B5 (.incoming(termContent), .cs(AccumulateTerms), .outgoing(multiplierA));
+    buffer B6 (.incoming(coefficient), .cs(AccumulateTerms), .outgoing(multiplierB));
     
     multiplier mymultiplier(.result(multiplierResult));
 
@@ -37,11 +41,12 @@ module datapath(input clk, input [2 : 0] state, input [15:0] vSig, input [15:0] 
     register X2 (.clk(clk), .load(StartCalculation), .clear(1'b0), .inc(1'b0), .asyncclear(1'b0), .data(multiplierResult));
 
     or(expressionAndTermLoad, StartCalculation, AccumulateTerms);
+
     multiplexer exprDataMux (.I0(16'b0), .I1(adderResult), .select(AccumulateTerms), .out(expressionData));
     register expression (.clk(clk), .load(expressionAndTermLoad), .clear(1'b0), .inc(1'b0),
          .asyncclear(1'b0), .data(expressionData), .Q(expressionContent));
 
-    multiplexer termDataMux (.I0({5'b1, 11'b0}), .I1(multiplierResult), .select(AccumulateTerms), .out(termData));
+    multiplexer termDataMux (.I0({5'b00001, 11'b0}), .I1(multiplierResult), .select(AccumulateTerms), .out(termData));
     register term (.clk(clk), .load(expressionAndTermLoad), .clear(1'b0),
          .inc(1'b0), .asyncclear(1'b0), .data(termData), .Q(termContent));
 
