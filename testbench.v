@@ -20,6 +20,7 @@ module testbench;
     end
 
     initial begin  
+        // test 1
         #1;
         vSig = 16'b0000100000000000;    // v = 1
         XSig = 16'b0000010000000000;    // x = 0.5
@@ -28,7 +29,7 @@ module testbench;
         start = 1'b0;
         #196;
 
-
+        // test 2
         vSig = 16'b1111010000000000;    // v = -1.5
         XSig = 16'b0000100101000110;    // x = 1.1592
         start = 1'b1;
@@ -36,7 +37,7 @@ module testbench;
         start = 1'b0;
         #196;
 
-
+        // test 3
         vSig = 16'b0101101011011001;    // v = -11.35
         XSig = 16'b0001100100100010;    // x = 3.141592
         start = 1'b1;
@@ -44,6 +45,7 @@ module testbench;
         start = 1'b0;
         #196;
 
+        // test 4
         vSig = 16'b0100001011001101;    // v = 8.35
         XSig = 16'b0000011001001000;    // x = 0.78515
         start = 1'b1;
@@ -51,7 +53,6 @@ module testbench;
         start = 1'b0;
         #196;
 
-        // 841
         vSig = 16'b1101100000000000;    // v = -5
         XSig = 16'b0000111101001001;    // x = 1.9106
         start = 1'b1;
@@ -59,20 +60,20 @@ module testbench;
         start = 1'b0;
         #100;
 
-        // 955
 
         rst = 1'b1;
         #1;
+        // test 5
         rst = 1'b0;
         vSig = 16'b0100001011001101;    // v = 8.35
         XSig = 16'b0000100111011001;    // x = 1.2309
         start = 1'b1;
         #13;
-        // 969
         start = 1'b0;
         #196;
 
 
+        // test 6
         vSig = 16'b1101100000000000;    // v = -5
         XSig = 16'b0001001111111100;    // x = 2.498
         start = 1'b1;
@@ -80,13 +81,13 @@ module testbench;
         start = 1'b0;
         #196;
 
+        // test 7
         vSig = 16'b1101100000000000;    // v = -5
         XSig = 16'b1110110000000100;    // x = -2.498
         start = 1'b1;
         #14;
         start = 1'b0;
         #196;
-
 
         $finish;
     end
