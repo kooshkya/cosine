@@ -7,12 +7,7 @@ module datapath(input clk, input [3 : 0] state, input [15:0] vSig, input [15:0] 
     comparator CalculateDistanceComp(.a(state), .b(4'd4), .E(CalculateDistance));
     comparator RemultComp(.a(state), .b(4'd5), .E(Remult));
 
-    wire [15 : 0] adderA;
-    wire [15 : 0] adderB;
-    wire [15 : 0] adderResult;
-    assign adderA = expressionContent;
-    assign adderB = termContent;
-    adder myadder(.a(adderA), .b(adderB), .result(adderResult));
+   
 
     wire [15 : 0] VContent;
     wire [15 : 0] expressionContent;
@@ -24,6 +19,9 @@ module datapath(input clk, input [3 : 0] state, input [15:0] vSig, input [15:0] 
     wire [15 : 0] X2Content;
 
     wire [15 : 0] coefficient;
+
+    wire [15 : 0] adderResult;
+    adder myadder(.a(expressionContent), .b(termContent), .result(adderResult));
 
 
     wire [15 : 0] multiplierA;
@@ -40,8 +38,6 @@ module datapath(input clk, input [3 : 0] state, input [15:0] vSig, input [15:0] 
     
     multiplier mymultiplier(.a(multiplierA), .b(multiplierB), .result(multiplierResult));
 
-    wire doneRegisterLoad;
-    assign doneRegisterLoad = CalculateDistance;
     defparam Done.n = 1;
     register Done (.clk(clk), .load(CalculateDistance), .clear(1'b0), .inc(1'b0), .asyncclear(StartCalculation), .data(1'b1), .Q(done));
     register V (.clk(clk), .load(StartCalculation), .clear(1'b0), .inc(1'b0), .asyncclear(1'b0), .data(vSig), .Q(VContent));
@@ -64,7 +60,8 @@ module datapath(input clk, input [3 : 0] state, input [15:0] vSig, input [15:0] 
 
     myrom therom (counterContent[2 : 0], coefficient);
 
-    assign stop = (counterContent[3 : 0] == 4'b1000) ? 1'b1 : 1'b0;
+    comparator CounterStop(.a(counterContent), .b(16'd8), .E(stop));
+    defparam CounterStop.n = 16;
 
     // always @ (clk) begin
     //     $display("time: %t\nmultiplierA: %b, multiplierB: %b, multiplierResult: %b\nexpressionContent: %b\n\n",

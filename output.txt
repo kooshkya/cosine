@@ -260,107 +260,107 @@ distance: xxxxx.xxxxxxxxxxx
 time:                  180
 clk: 1
 start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
-state: 0101, stop: 1
+state: 0100, stop: 1
 distance: xxxxx.xxxxxxxxxxx
 
 
 time:                  185
 clk: 0
 start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
-state: 0101, stop: 1
-distance: xxxxx.xxxxxxxxxxx
-
-
-time:                  190
-clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
-state: 0011, stop: 1
-distance: xxxxx.xxxxxxxxxxx
-
-
-time:                  195
-clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
-state: 0011, stop: 1
-distance: xxxxx.xxxxxxxxxxx
-
-
-time:                  200
-clk: 1
-start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
-state: 0100, stop: 0
-distance: xxxxx.xxxxxxxxxxx
-
-
-time:                  205
-clk: 0
-start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
-state: 0100, stop: 0
+state: 0100, stop: 1
 distance: xxxxx.xxxxxxxxxxx
 
 
 Done! distance is : 00000.11100000101 and 0000011100000101
 
+time:                  190
+clk: 1
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0000, stop: 1
+distance: 00000.11100000101
+
+
+time:                  195
+clk: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0000, stop: 1
+distance: 00000.11100000101
+
+
+time:                  200
+clk: 1
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0000, stop: 1
+distance: 00000.11100000101
+
+
+time:                  205
+clk: 0
+start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
+state: 0000, stop: 1
+distance: 00000.11100000101
+
+
 time:                  210
 clk: 1
 start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
-state: 0000, stop: 0
+state: 0000, stop: 1
 distance: 00000.11100000101
 
 
 time:                  215
 clk: 0
 start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
-state: 0000, stop: 0
+state: 0000, stop: 1
 distance: 00000.11100000101
 
 
 time:                  220
 clk: 1
 start: 0, vSig: 00001.00000000000, xSig: 00000.10000000000
-state: 0000, stop: 0
+state: 0000, stop: 1
 distance: 00000.11100000101
 
 
 time:                  221
 clk: 1
 start: 1, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0000, stop: 0
+state: 0000, stop: 1
 distance: 00000.11100000101
 
 
 time:                  225
 clk: 0
 start: 1, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0000, stop: 0
+state: 0000, stop: 1
 distance: 00000.11100000101
 
 
 time:                  230
 clk: 1
 start: 1, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0001, stop: 0
+state: 0001, stop: 1
 distance: 00000.11100000101
 
 
 time:                  235
 clk: 0
 start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0001, stop: 0
+state: 0001, stop: 1
 distance: 00000.11100000101
 
 
 time:                  240
 clk: 1
 start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0010, stop: 0
+state: 0010, stop: 1
 distance: 00000.11100000101
 
 
 time:                  245
 clk: 0
 start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0010, stop: 0
+state: 0010, stop: 1
 distance: 00000.11100000101
 
 
@@ -577,107 +577,107 @@ distance: 00000.11100000101
 time:                  400
 clk: 1
 start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0101, stop: 1
+state: 0100, stop: 1
 distance: 00000.11100000101
 
 
 time:                  405
 clk: 0
 start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0101, stop: 1
-distance: 00000.11100000101
-
-
-time:                  410
-clk: 1
-start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0011, stop: 1
-distance: 00000.11100000101
-
-
-time:                  415
-clk: 0
-start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0011, stop: 1
-distance: 00000.11100000101
-
-
-time:                  420
-clk: 1
-start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0100, stop: 0
-distance: 00000.11100000101
-
-
-time:                  425
-clk: 0
-start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0100, stop: 0
+state: 0100, stop: 1
 distance: 00000.11100000101
 
 
 Done! distance is : 11111.01100110010 and 1111101100110010
 
+time:                  410
+clk: 1
+start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
+state: 0000, stop: 1
+distance: 11111.01100110010
+
+
+time:                  415
+clk: 0
+start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
+state: 0000, stop: 1
+distance: 11111.01100110010
+
+
+time:                  420
+clk: 1
+start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
+state: 0000, stop: 1
+distance: 11111.01100110010
+
+
+time:                  425
+clk: 0
+start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
+state: 0000, stop: 1
+distance: 11111.01100110010
+
+
 time:                  430
 clk: 1
 start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0000, stop: 0
+state: 0000, stop: 1
 distance: 11111.01100110010
 
 
 time:                  435
 clk: 0
 start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0000, stop: 0
+state: 0000, stop: 1
 distance: 11111.01100110010
 
 
 time:                  440
 clk: 1
 start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
-state: 0000, stop: 0
+state: 0000, stop: 1
 distance: 11111.01100110010
 
 
 time:                  441
 clk: 1
 start: 1, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0000, stop: 0
+state: 0000, stop: 1
 distance: 11111.01100110010
 
 
 time:                  445
 clk: 0
 start: 1, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0000, stop: 0
+state: 0000, stop: 1
 distance: 11111.01100110010
 
 
 time:                  450
 clk: 1
 start: 1, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0001, stop: 0
+state: 0001, stop: 1
 distance: 11111.01100110010
 
 
 time:                  455
 clk: 0
 start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0001, stop: 0
+state: 0001, stop: 1
 distance: 11111.01100110010
 
 
 time:                  460
 clk: 1
 start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0010, stop: 0
+state: 0010, stop: 1
 distance: 11111.01100110010
 
 
 time:                  465
 clk: 0
 start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0010, stop: 0
+state: 0010, stop: 1
 distance: 11111.01100110010
 
 
@@ -894,51 +894,51 @@ distance: 11111.01100110010
 time:                  620
 clk: 1
 start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0101, stop: 1
+state: 0100, stop: 1
 distance: 11111.01100110010
 
 
 time:                  625
 clk: 0
 start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0101, stop: 1
-distance: 11111.01100110010
-
-
-time:                  630
-clk: 1
-start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0011, stop: 1
-distance: 11111.01100110010
-
-
-time:                  635
-clk: 0
-start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0011, stop: 1
-distance: 11111.01100110010
-
-
-time:                  640
-clk: 1
-start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0100, stop: 0
-distance: 11111.01100110010
-
-
-time:                  645
-clk: 0
-start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0100, stop: 0
+state: 0100, stop: 1
 distance: 11111.01100110010
 
 
 Done! distance is : 10100.11000001011 and 1010011000001011
 
+time:                  630
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0000, stop: 1
+distance: 10100.11000001011
+
+
+time:                  635
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0000, stop: 1
+distance: 10100.11000001011
+
+
+time:                  640
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0000, stop: 1
+distance: 10100.11000001011
+
+
+time:                  645
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0000, stop: 1
+distance: 10100.11000001011
+
+
 time:                  650
 clk: 1
 start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
-state: 0000, stop: 0
+state: 0000, stop: 1
 distance: 10100.11000001011
 
 
