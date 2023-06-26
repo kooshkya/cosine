@@ -1,17 +1,11 @@
 module datapath(input clk, input [3 : 0] state, input [15:0] vSig, input [15:0] XSig, output done, stop, output [15 : 0] distance);
     wire StandBy, Alert, StartCalculation, AccumulateTerms, Remult, CalculateDistance;
-    // comparator StandByComp(.a(state), .b(4'd0), .E(StandBy));
-    // comparator AlertComp(.a(state), .b(4'd1), .E(Alert));
-    // comparator StartCalculationComp(.a(state), .b(4'd2), .E(StartCalculation));
-    // comparator AccumulateTermsComp(.a(state), .b(4'd3), .E(AccumulateTerms));
-    // comparator CalculateDistanceComp(.a(state), .b(4'd4), .E(CalculateDistance));
-    // comparator RemultComp(.a(state), .b(4'd5), .E(Remult));
-    assign StandBy = (state == 4'd0);
-    assign Alert = (state == 4'd1);
-    assign StartCalculation = (state == 4'd2);
-    assign AccumulateTerms = (state == 4'd3);
-    assign CalculateDistance = (state == 4'd4);
-    assign Remult = (state == 4'd5);
+    comparator StandByComp(.a(state), .b(4'd0), .E(StandBy));
+    comparator AlertComp(.a(state), .b(4'd1), .E(Alert));
+    comparator StartCalculationComp(.a(state), .b(4'd2), .E(StartCalculation));
+    comparator AccumulateTermsComp(.a(state), .b(4'd3), .E(AccumulateTerms));
+    comparator CalculateDistanceComp(.a(state), .b(4'd4), .E(CalculateDistance));
+    comparator RemultComp(.a(state), .b(4'd5), .E(Remult));
 
     wire [15 : 0] adderA;
     wire [15 : 0] adderB;
