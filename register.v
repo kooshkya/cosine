@@ -7,11 +7,11 @@ module register(input clk, load, clear, inc, asyncclear, input[n - 1:0] data, ou
         end
         else begin
             if (load) begin
-                Q = data;
+                Q = #1 data;
             end else if (inc) begin
-                Q = Q + 1;
+                Q = #1 Q + 1;
             end else if (clear) begin
-                Q = 0;
+                Q = #1 0;
             end
         end
     end

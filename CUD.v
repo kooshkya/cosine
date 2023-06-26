@@ -17,8 +17,9 @@ module CUD;
 
     initial begin
         clk = 1'b1;
-        $monitor("time: %t\nclk: %b\nstart: %b, vSig: %b.%b, xSig: %b.%b\nstate: %b, stop: %b\ndistance: %b.%b\n\n", $time, clk, start, vSig[15 : 11], vSig[10 : 0],
-            XSig[15 : 11], XSig[10 : 0], state, stop, distance[15 : 11], distance[10 : 0]);
+        $monitor("time: %t\nclk: %b\nstart: %b, vSig: %b.%b, xSig: %b.%b\nstate: %b, stop: %b\ndone: %b distance: %b.%b\n\n", $time, clk, start, vSig[15 : 11], vSig[10 : 0],
+            XSig[15 : 11], XSig[10 : 0], state, stop, done, distance[15 : 11], distance[10 : 0]);
+        $monitoroff;
     end
 
     always @ (posedge done) begin

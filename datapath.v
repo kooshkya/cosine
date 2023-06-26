@@ -6,7 +6,6 @@ module datapath(input clk, input [3 : 0] state, input [15:0] vSig, input [15:0] 
     comparator AccumulateTermsComp(.a(state), .b(4'd3), .E(AccumulateTerms));
     comparator CalculateDistanceComp(.a(state), .b(4'd4), .E(CalculateDistance));
     comparator RemultComp(.a(state), .b(4'd5), .E(Remult));
-
    
 
     wire [15 : 0] VContent;
@@ -71,5 +70,8 @@ module datapath(input clk, input [3 : 0] state, input [15:0] vSig, input [15:0] 
     // end
     // always @ (clk) begin
     //     $display("time: %t\nexpressionContent: %b, termContent: %b, addResult: %b\n\n", $time, expressionContent, termContent, adderResult);
+    // end
+    // always @ (clk) begin
+    //     $display("time: %t\nstate: %d, count: %d\n", $time, state, counterContent);
     // end
 endmodule
