@@ -86,6 +86,13 @@ module CUD;
         start = 1'b0;
         #196;
 
+        vSig = 16'b1101100000000000;    // v = -5
+        XSig = 16'b1110110000000100;    // x = -2.498
+        start = 1'b1;
+        #14;
+        start = 1'b0;
+        #196;
+
 
         $finish;
     end

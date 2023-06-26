@@ -16,3 +16,6 @@ Done! distance is : 00010.11001000111 and 0001011001000111
 time:                 1371
 Done! distance is : 00011.11111001100 and 0001111111001100
 
+time:                 1581
+Done! distance is : 00011.11111001100 and 0001111111001100
+
