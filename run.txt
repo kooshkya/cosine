@@ -1,3 +1,3 @@
-iverilog -o test.vvp comparator.v myrom.v multiplexer.v buffer.v adder.v multiplier.v register.v registerr.v datapath.v controlUnit.v CUD.v
+iverilog -o test.vvp comparator.v myrom.v multiplexer.v buffer.v adder.v multiplier.v register.v registerr.v datapath.v controlUnit.v CUD.v testbench.v
 
 vvp test.vvp > output.txt
