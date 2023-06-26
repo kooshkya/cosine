@@ -1,13 +1,18 @@
-time:                    0
-clk: 1
-start: x, vSig: xxxxx.xxxxxxxxxxx, xSig: xxxxx.xxxxxxxxxxx
-state: 0000, stop: x
-done: x distance: xxxxx.xxxxxxxxxxx
-
-
+time:                  211
 Done! distance is : 00000.11100000101 and 0000011100000101
 
+time:                  421
 Done! distance is : 11111.01100110010 and 1111101100110010
 
+time:                  631
 Done! distance is : 10100.11000001011 and 1010011000001011
+
+time:                  841
+Done! distance is : 00101.11101000011 and 0010111101000011
+
+time:                 1161
+Done! distance is : 00010.11001000111 and 0001011001000111
+
+time:                 1371
+Done! distance is : 00011.11111001100 and 0001111111001100
 

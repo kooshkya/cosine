@@ -17,13 +17,12 @@ module CUD;
 
     initial begin
         clk = 1'b1;
-        $monitor("time: %t\nclk: %b\nstart: %b, vSig: %b.%b, xSig: %b.%b\nstate: %b, stop: %b\ndone: %b distance: %b.%b\n\n", $time, clk, start, vSig[15 : 11], vSig[10 : 0],
-            XSig[15 : 11], XSig[10 : 0], state, stop, done, distance[15 : 11], distance[10 : 0]);
-        $monitoroff;
+        // $monitor("time: %t\nclk: %b\nstart: %b, vSig: %b.%b, xSig: %b.%b\nstate: %b, stop: %b\ndone: %b distance: %b.%b\n\n", $time, clk, start, vSig[15 : 11], vSig[10 : 0],
+        //     XSig[15 : 11], XSig[10 : 0], state, stop, done, distance[15 : 11], distance[10 : 0]);
     end
 
     always @ (posedge done) begin
-        $display("Done! distance is : %b.%b and %b\n", distance[15:11], distance[10:0], distance);
+        $display("time: %t\nDone! distance is : %b.%b and %b\n", $time, distance[15:11], distance[10:0], distance);
     end
 
     initial begin  
@@ -34,24 +33,60 @@ module CUD;
         #14;
         start = 1'b0;
         #196;
-        rst = 1'b1;
-        #10;
-        rst = 1'b0;
+
+
         vSig = 16'b1111010000000000;    // v = -1.5
         XSig = 16'b0000100101000110;    // x = 1.1592
         start = 1'b1;
         #14;
         start = 1'b0;
         #196;
-        rst = 1'b1;
-        #10;
-        rst = 1'b0;
+
+
         vSig = 16'b0101101011011001;    // v = -11.35
         XSig = 16'b0001100100100010;    // x = 3.141592
         start = 1'b1;
         #14;
         start = 1'b0;
         #196;
+
+        vSig = 16'b0100001011001101;    // v = 8.35
+        XSig = 16'b0000011001001000;    // x = 0.78515
+        start = 1'b1;
+        #14;
+        start = 1'b0;
+        #196;
+
+        // 841
+        vSig = 16'b1101100000000000;    // v = -5
+        XSig = 16'b0000111101001001;    // x = 1.9106
+        start = 1'b1;
+        #14;
+        start = 1'b0;
+        #100;
+
+        // 955
+
+        rst = 1'b1;
+        #1;
+        rst = 1'b0;
+        vSig = 16'b0100001011001101;    // v = 8.35
+        XSig = 16'b0000100111011001;    // x = 1.2309
+        start = 1'b1;
+        #13;
+        // 969
+        start = 1'b0;
+        #196;
+
+
+        vSig = 16'b1101100000000000;    // v = -5
+        XSig = 16'b0001001111111100;    // x = 2.498
+        start = 1'b1;
+        #14;
+        start = 1'b0;
+        #196;
+
+
         $finish;
     end
 endmodule
