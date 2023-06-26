@@ -625,3 +625,320 @@ state: 0000, stop: 0
 distance: 11111.01100110010
 
 
+time:                  435
+clk: 0
+start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
+state: 0000, stop: 0
+distance: 11111.01100110010
+
+
+time:                  440
+clk: 1
+start: 0, vSig: 11110.10000000000, xSig: 00001.00101000110
+state: 0000, stop: 0
+distance: 11111.01100110010
+
+
+time:                  441
+clk: 1
+start: 1, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0000, stop: 0
+distance: 11111.01100110010
+
+
+time:                  445
+clk: 0
+start: 1, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0000, stop: 0
+distance: 11111.01100110010
+
+
+time:                  450
+clk: 1
+start: 1, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0001, stop: 0
+distance: 11111.01100110010
+
+
+time:                  455
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0001, stop: 0
+distance: 11111.01100110010
+
+
+time:                  460
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0010, stop: 0
+distance: 11111.01100110010
+
+
+time:                  465
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0010, stop: 0
+distance: 11111.01100110010
+
+
+time:                  470
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  475
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  480
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  485
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  490
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  495
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  500
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  505
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  510
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  515
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  520
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  525
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  530
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  535
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  540
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  545
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  550
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  555
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  560
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  565
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  570
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  575
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  580
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  585
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  590
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  595
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  600
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  605
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 0
+distance: 11111.01100110010
+
+
+time:                  610
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  615
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 0
+distance: 11111.01100110010
+
+
+time:                  620
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 1
+distance: 11111.01100110010
+
+
+time:                  625
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0101, stop: 1
+distance: 11111.01100110010
+
+
+time:                  630
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 1
+distance: 11111.01100110010
+
+
+time:                  635
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0011, stop: 1
+distance: 11111.01100110010
+
+
+time:                  640
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0100, stop: 0
+distance: 11111.01100110010
+
+
+time:                  645
+clk: 0
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0100, stop: 0
+distance: 11111.01100110010
+
+
+Done! distance is : 10100.11000001011 and 1010011000001011
+
+time:                  650
+clk: 1
+start: 0, vSig: 01011.01011011001, xSig: 00011.00100100010
+state: 0000, stop: 0
+distance: 10100.11000001011
+
+
